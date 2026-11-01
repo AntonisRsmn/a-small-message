@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f9d6df">
+  <title>For My Favorite Person</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+    <section class="hero">
+      <div class="sparkle sparkle-one">✦</div>
+      <div class="sparkle sparkle-two">♥</div>
+      <p class="eyebrow">a tiny corner of the internet for</p>
+      <h1>my favorite<br><em>person.</em></h1>
+      <p class="hero-copy">I made you a website because apparently loving you in real life was not enough.</p>
+      <button class="heart-button" id="startButton" type="button">open your surprise <span>→</span></button>
+      <p class="scroll-note">scroll with love ↓</p>
+    </section>
+
+    <section class="letter reveal">
+      <p class="section-label">01 / a little note</p>
+      <div class="letter-card">
+        <p>Hi beautiful,</p>
+        <p>Just a reminder that you make ordinary days feel like the best kind of story. You are my favorite notification, my safest place, and the reason I smile at my phone like an idiot.</p>
+        <p>I hope this little page makes you feel as loved as you make me feel every day.</p>
+        <p class="signature">always yours,<br>your boyfriend ♡</p>
+      </div>
+    </section>
+
+    <section class="reasons reveal">
+      <p class="section-label">02 / why you are magic</p>
+      <h2>Things I love<br>about <em>you.</em></h2>
+      <div class="reason-grid">
+        <article class="reason-card pink">
+          <span>01</span>
+          <p>the way you make every room brighter</p>
+        </article>
+        <article class="reason-card yellow">
+          <span>02</span>
+          <p>your laugh, especially when you cannot stop</p>
+        </article>
+        <article class="reason-card blue">
+          <span>03</span>
+          <p>how you make being yourself look so beautiful</p>
+        </article>
+        <article class="reason-card lavender">
+          <span>04</span>
+          <p>every little thing that makes you, you</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="playlist reveal">
+      <p class="section-label">03 / our soundtrack</p>
+      <div class="playlist-header">
+        <h2>songs that feel<br>like <em>us.</em></h2>
+        <div class="disc">♡</div>
+      </div>
+      <div class="track-list">
+        <!-- Replace each Spotify URL below with the share link from that song in Spotify. -->
+        <a class="track" href="https://open.spotify.com/track/5ih5d9WJSI7Hxz0KIPJPY2?si=4df1472f5d634b62" target="_blank" rel="noopener noreferrer">
+          <span>01</span><strong>YEN</strong><i>Slipknot ↗</i>
+        </a>
+        <a class="track" href="https://open.spotify.com/track/3Hrdh8vuUbeCK6bFkd4HZX?si=7b5299cea6ce412d" target="_blank" rel="noopener noreferrer">
+          <span>02</span><strong>Throne of Want</strong><i>Cenobia ↗</i>
+        </a>
+        <a class="track" href="https://open.spotify.com/track/57yz82UQU8ggCxQbQN3xcU?si=29811b1737d9482a" target="_blank" rel="noopener noreferrer">
+          <span>03</span><strong>The Black</strong><i>Imminence ↗</i>
+        </a>
+      </div>
+      <p class="tiny-note">our little soundtrack ♫</p>
+    </section>
+
+    <section class="final reveal">
+      <div class="sparkle sparkle-three">✦</div>
+      <p class="eyebrow">one last thing</p>
+      <h2>you are so<br><em>loved.</em></h2>
+      <button class="love-button" id="loveButton" type="button">click for a reminder ♡</button>
+      <p class="love-message" id="loveMessage" aria-live="polite"></p>
+    </section>
+  </main>
+  <div class="surprise-modal" id="surpriseModal" aria-hidden="true">
+    <div class="particle-field" id="particleField" aria-hidden="true"></div>
+    <div class="surprise-card" role="dialog" aria-modal="true" aria-labelledby="surpriseTitle">
+      <button class="close-button" id="closeButton" type="button" aria-label="Close surprise">×</button>
+      <p class="eyebrow">a message just for you</p>
+      <div class="modal-heart">♡</div>
+      <h2 id="surpriseTitle">You make<br>my heart <em>happy.</em></h2>
+      <!-- Change this message to anything you would like to say to her. -->
+      <p class="surprise-message">No matter where we are or what kind of day it is, my favorite place will always be right next to you.</p>
+      <p class="modal-signoff">forever your biggest fan ♡</p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
